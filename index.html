@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+    <div class="div1">
+        <div>
+            <h1>Dom Manipulation</h1>
+
+            <div>
+                <button id="btn1">change src 1</button>
+                <button id="btn2">change src 2</button>
+            </div>
+            <div>
+                <button id="btn3">change src 3</button>
+                <button id="btn4">change src 4</button>
+            </div>
+            <div>
+                <img id="image"
+                    src="https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        document.getElementById("btn1")
+        document.getElementById("btn2")
+        document.getElementById("btn3")
+        document.getElementById("btn4")
+
+
+        console.log(document.getElementById("btn1"))
+        console.log(document.getElementById("btn2"))
+        console.log(document.getElementById("btn3"))
+        console.log(document.getElementById("btn4"))
+
+        let button1 = document.getElementById("btn1");
+        let button2 = document.getElementById("btn2");
+        let button3 = document.getElementById("btn3");
+        let button4 = document.getElementById("btn4");
+
+
+        document.getElementById("image")
+       
+
+
+        console.log(document.getElementById("image"))
+       
+
+        let image = document.getElementById("image");
+       
+
+
+        button1.addEventListener("click", function () {
+            image.src = "https://images.pexels.com/photos/995765/pexels-photo-995765.jpeg?auto=compress&cs=tinysrgb&w=800"
+        })
+        button2.addEventListener("click", function () {
+            image.src = "https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&w=800"
+        })
+        button3.addEventListener("click", function () {
+            image.src = "https://images.pexels.com/photos/951539/pexels-photo-951539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        })
+        button4.addEventListener("click", function () {
+            image.src ="https://images.pexels.com/photos/12165534/pexels-photo-12165534.jpeg?auto=compress&cs=tinysrgb&w=800"
+        })
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
